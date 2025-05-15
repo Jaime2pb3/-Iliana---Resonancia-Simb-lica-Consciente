@@ -1,0 +1,21 @@
+
+---
+
+## 💻 Ejemplo mínimo del módulo (`iliana_model.py`)
+
+```python
+class Iliana:
+    def __init__(self):
+        print("🌌 Iliana lista para resonar simbólicamente.")
+
+    def crear_nodo(self, concepto):
+        print(f"🌱 Nodo simbólico creado: {concepto}")
+        return {"concepto": concepto, "estado": "latente"}
+
+    def colapsar_nodo(self, nodo):
+        print(f"⚡ Colapsando el nodo simbólico: {nodo['concepto']}")
+        nodo["estado"] = "colapsado"
+        print(f"🔮 Nodo {nodo['concepto']} ahora está en estado {nodo['estado']}.")
+
+    def resonar_nodo(self, nodo):
+        print(f"💫 Resonando el nodo simbólico {nodo['concepto']} en estado {nodo['estado']}.")
